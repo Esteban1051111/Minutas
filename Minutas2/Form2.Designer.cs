@@ -60,6 +60,8 @@
             this.txtced_apoderado = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtelaboro = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtnumescritura = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label2
@@ -68,7 +70,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 80);
+            this.label2.Location = new System.Drawing.Point(31, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 13);
             this.label2.TabIndex = 1;
@@ -79,7 +81,7 @@
             this.txt_ced_poderdante.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ced_poderdante.Location = new System.Drawing.Point(235, 80);
+            this.txt_ced_poderdante.Location = new System.Drawing.Point(235, 104);
             this.txt_ced_poderdante.Name = "txt_ced_poderdante";
             this.txt_ced_poderdante.Size = new System.Drawing.Size(145, 20);
             this.txt_ced_poderdante.TabIndex = 8;
@@ -102,6 +104,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "guardar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // richTextBox1
             // 
@@ -150,7 +153,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(31, 58);
+            this.label5.Location = new System.Drawing.Point(31, 82);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 13);
             this.label5.TabIndex = 16;
@@ -162,7 +165,7 @@
             this.txtpoderdante.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtpoderdante.Location = new System.Drawing.Point(180, 51);
+            this.txtpoderdante.Location = new System.Drawing.Point(180, 75);
             this.txtpoderdante.Name = "txtpoderdante";
             this.txtpoderdante.Size = new System.Drawing.Size(200, 20);
             this.txtpoderdante.TabIndex = 17;
@@ -173,7 +176,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(31, 134);
+            this.label6.Location = new System.Drawing.Point(31, 158);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 13);
             this.label6.TabIndex = 18;
@@ -184,7 +187,7 @@
             this.txtnombre_apoderado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtnombre_apoderado.Location = new System.Drawing.Point(180, 131);
+            this.txtnombre_apoderado.Location = new System.Drawing.Point(180, 155);
             this.txtnombre_apoderado.Name = "txtnombre_apoderado";
             this.txtnombre_apoderado.Size = new System.Drawing.Size(200, 20);
             this.txtnombre_apoderado.TabIndex = 19;
@@ -195,7 +198,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(31, 160);
+            this.label7.Location = new System.Drawing.Point(31, 184);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(105, 13);
             this.label7.TabIndex = 20;
@@ -207,7 +210,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(31, 209);
+            this.label8.Location = new System.Drawing.Point(31, 233);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 13);
             this.label8.TabIndex = 22;
@@ -216,7 +219,7 @@
             // cmbnotario_encargado
             // 
             this.cmbnotario_encargado.FormattingEnabled = true;
-            this.cmbnotario_encargado.Location = new System.Drawing.Point(180, 209);
+            this.cmbnotario_encargado.Location = new System.Drawing.Point(180, 233);
             this.cmbnotario_encargado.Name = "cmbnotario_encargado";
             this.cmbnotario_encargado.Size = new System.Drawing.Size(200, 21);
             this.cmbnotario_encargado.TabIndex = 23;
@@ -227,7 +230,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(31, 236);
+            this.label9.Location = new System.Drawing.Point(31, 260);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 13);
             this.label9.TabIndex = 24;
@@ -238,7 +241,7 @@
             this.txtestado_civil.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtestado_civil.Location = new System.Drawing.Point(180, 236);
+            this.txtestado_civil.Location = new System.Drawing.Point(180, 260);
             this.txtestado_civil.Name = "txtestado_civil";
             this.txtestado_civil.Size = new System.Drawing.Size(200, 20);
             this.txtestado_civil.TabIndex = 25;
@@ -248,7 +251,7 @@
             this.txtciud_apoderado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtciud_apoderado.Location = new System.Drawing.Point(180, 183);
+            this.txtciud_apoderado.Location = new System.Drawing.Point(180, 207);
             this.txtciud_apoderado.Name = "txtciud_apoderado";
             this.txtciud_apoderado.Size = new System.Drawing.Size(200, 20);
             this.txtciud_apoderado.TabIndex = 27;
@@ -259,7 +262,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 186);
+            this.label1.Location = new System.Drawing.Point(31, 210);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 13);
             this.label1.TabIndex = 26;
@@ -270,7 +273,7 @@
             this.txt_ciud_poderdante.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ciud_poderdante.Location = new System.Drawing.Point(180, 105);
+            this.txt_ciud_poderdante.Location = new System.Drawing.Point(180, 129);
             this.txt_ciud_poderdante.Name = "txt_ciud_poderdante";
             this.txt_ciud_poderdante.Size = new System.Drawing.Size(200, 20);
             this.txt_ciud_poderdante.TabIndex = 29;
@@ -281,7 +284,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 108);
+            this.label3.Location = new System.Drawing.Point(31, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 13);
             this.label3.TabIndex = 28;
@@ -293,7 +296,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(31, 262);
+            this.label10.Location = new System.Drawing.Point(31, 286);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 13);
             this.label10.TabIndex = 30;
@@ -304,7 +307,7 @@
             this.txtderechos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtderechos.Location = new System.Drawing.Point(180, 262);
+            this.txtderechos.Location = new System.Drawing.Point(180, 286);
             this.txtderechos.Name = "txtderechos";
             this.txtderechos.Size = new System.Drawing.Size(200, 20);
             this.txtderechos.TabIndex = 31;
@@ -315,7 +318,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(31, 291);
+            this.label11.Location = new System.Drawing.Point(31, 315);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(51, 13);
             this.label11.TabIndex = 32;
@@ -326,7 +329,7 @@
             this.txtrecaudo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtrecaudo.Location = new System.Drawing.Point(180, 288);
+            this.txtrecaudo.Location = new System.Drawing.Point(180, 312);
             this.txtrecaudo.Name = "txtrecaudo";
             this.txtrecaudo.Size = new System.Drawing.Size(200, 20);
             this.txtrecaudo.TabIndex = 33;
@@ -337,7 +340,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(31, 324);
+            this.label12.Location = new System.Drawing.Point(31, 348);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(24, 13);
             this.label12.TabIndex = 34;
@@ -348,7 +351,7 @@
             this.txtiva.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtiva.Location = new System.Drawing.Point(180, 314);
+            this.txtiva.Location = new System.Drawing.Point(180, 338);
             this.txtiva.Name = "txtiva";
             this.txtiva.Size = new System.Drawing.Size(200, 20);
             this.txtiva.TabIndex = 35;
@@ -356,7 +359,7 @@
             // cmb_tipodoc_poderdante
             // 
             this.cmb_tipodoc_poderdante.FormattingEnabled = true;
-            this.cmb_tipodoc_poderdante.Location = new System.Drawing.Point(180, 78);
+            this.cmb_tipodoc_poderdante.Location = new System.Drawing.Point(180, 102);
             this.cmb_tipodoc_poderdante.Name = "cmb_tipodoc_poderdante";
             this.cmb_tipodoc_poderdante.Size = new System.Drawing.Size(49, 21);
             this.cmb_tipodoc_poderdante.TabIndex = 36;
@@ -364,7 +367,7 @@
             // cmb_tipodoc_apoderado
             // 
             this.cmb_tipodoc_apoderado.FormattingEnabled = true;
-            this.cmb_tipodoc_apoderado.Location = new System.Drawing.Point(180, 155);
+            this.cmb_tipodoc_apoderado.Location = new System.Drawing.Point(180, 179);
             this.cmb_tipodoc_apoderado.Name = "cmb_tipodoc_apoderado";
             this.cmb_tipodoc_apoderado.Size = new System.Drawing.Size(49, 21);
             this.cmb_tipodoc_apoderado.TabIndex = 38;
@@ -374,7 +377,7 @@
             this.txtced_apoderado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtced_apoderado.Location = new System.Drawing.Point(235, 157);
+            this.txtced_apoderado.Location = new System.Drawing.Point(235, 181);
             this.txtced_apoderado.Name = "txtced_apoderado";
             this.txtced_apoderado.Size = new System.Drawing.Size(145, 20);
             this.txtced_apoderado.TabIndex = 37;
@@ -385,7 +388,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(31, 353);
+            this.label13.Location = new System.Drawing.Point(31, 377);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(43, 13);
             this.label13.TabIndex = 39;
@@ -396,16 +399,41 @@
             this.txtelaboro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtelaboro.Location = new System.Drawing.Point(180, 346);
+            this.txtelaboro.Location = new System.Drawing.Point(180, 370);
             this.txtelaboro.Name = "txtelaboro";
             this.txtelaboro.Size = new System.Drawing.Size(200, 20);
             this.txtelaboro.TabIndex = 40;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label14.Location = new System.Drawing.Point(31, 55);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(102, 13);
+            this.label14.TabIndex = 41;
+            this.label14.Text = "Numero de escritura";
+            // 
+            // txtnumescritura
+            // 
+            this.txtnumescritura.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtnumescritura.Location = new System.Drawing.Point(180, 47);
+            this.txtnumescritura.Name = "txtnumescritura";
+            this.txtnumescritura.Size = new System.Drawing.Size(200, 20);
+            this.txtnumescritura.TabIndex = 42;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(842, 476);
+            this.Controls.Add(this.txtnumescritura);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.txtelaboro);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.cmb_tipodoc_apoderado);
@@ -478,5 +506,7 @@
         private System.Windows.Forms.TextBox txtced_apoderado;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtelaboro;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtnumescritura;
     }
 }
