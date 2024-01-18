@@ -62,6 +62,8 @@
             this.txtelaboro = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtnumescritura = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cmbtitular = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label2
@@ -113,6 +115,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.Location = new System.Drawing.Point(440, 12);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(378, 452);
             this.richTextBox1.TabIndex = 12;
             this.richTextBox1.Text = "";
@@ -212,9 +215,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(31, 233);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 13);
+            this.label8.Size = new System.Drawing.Size(56, 13);
             this.label8.TabIndex = 22;
-            this.label8.Text = "Notario(a) titular";
+            this.label8.Text = "Notario(a) ";
             // 
             // cmbnotario_encargado
             // 
@@ -230,7 +233,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(31, 260);
+            this.label9.Location = new System.Drawing.Point(31, 291);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 13);
             this.label9.TabIndex = 24;
@@ -241,7 +244,7 @@
             this.txtestado_civil.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtestado_civil.Location = new System.Drawing.Point(180, 260);
+            this.txtestado_civil.Location = new System.Drawing.Point(180, 291);
             this.txtestado_civil.Name = "txtestado_civil";
             this.txtestado_civil.Size = new System.Drawing.Size(200, 20);
             this.txtestado_civil.TabIndex = 25;
@@ -296,7 +299,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(31, 286);
+            this.label10.Location = new System.Drawing.Point(31, 317);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 13);
             this.label10.TabIndex = 30;
@@ -307,7 +310,7 @@
             this.txtderechos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtderechos.Location = new System.Drawing.Point(180, 286);
+            this.txtderechos.Location = new System.Drawing.Point(180, 317);
             this.txtderechos.Name = "txtderechos";
             this.txtderechos.Size = new System.Drawing.Size(200, 20);
             this.txtderechos.TabIndex = 31;
@@ -318,7 +321,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(31, 315);
+            this.label11.Location = new System.Drawing.Point(31, 346);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(51, 13);
             this.label11.TabIndex = 32;
@@ -329,7 +332,7 @@
             this.txtrecaudo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtrecaudo.Location = new System.Drawing.Point(180, 312);
+            this.txtrecaudo.Location = new System.Drawing.Point(180, 343);
             this.txtrecaudo.Name = "txtrecaudo";
             this.txtrecaudo.Size = new System.Drawing.Size(200, 20);
             this.txtrecaudo.TabIndex = 33;
@@ -340,7 +343,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(31, 348);
+            this.label12.Location = new System.Drawing.Point(31, 379);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(24, 13);
             this.label12.TabIndex = 34;
@@ -351,7 +354,7 @@
             this.txtiva.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtiva.Location = new System.Drawing.Point(180, 338);
+            this.txtiva.Location = new System.Drawing.Point(180, 369);
             this.txtiva.Name = "txtiva";
             this.txtiva.Size = new System.Drawing.Size(200, 20);
             this.txtiva.TabIndex = 35;
@@ -388,7 +391,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(31, 377);
+            this.label13.Location = new System.Drawing.Point(31, 408);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(43, 13);
             this.label13.TabIndex = 39;
@@ -399,7 +402,7 @@
             this.txtelaboro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtelaboro.Location = new System.Drawing.Point(180, 370);
+            this.txtelaboro.Location = new System.Drawing.Point(180, 401);
             this.txtelaboro.Name = "txtelaboro";
             this.txtelaboro.Size = new System.Drawing.Size(200, 20);
             this.txtelaboro.TabIndex = 40;
@@ -427,11 +430,34 @@
             this.txtnumescritura.Size = new System.Drawing.Size(200, 20);
             this.txtnumescritura.TabIndex = 42;
             // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(31, 263);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(92, 13);
+            this.label15.TabIndex = 43;
+            this.label15.Text = "Titular/encargado";
+            // 
+            // cmbtitular
+            // 
+            this.cmbtitular.FormattingEnabled = true;
+            this.cmbtitular.Location = new System.Drawing.Point(180, 260);
+            this.cmbtitular.Name = "cmbtitular";
+            this.cmbtitular.Size = new System.Drawing.Size(200, 21);
+            this.cmbtitular.TabIndex = 44;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(842, 476);
+            this.Controls.Add(this.cmbtitular);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.txtnumescritura);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.txtelaboro);
@@ -508,5 +534,7 @@
         private System.Windows.Forms.TextBox txtelaboro;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtnumescritura;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox cmbtitular;
     }
 }
