@@ -35,28 +35,31 @@
             // 
             // Titulo
             // 
+            this.Titulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Titulo.AutoSize = true;
-            this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo.Location = new System.Drawing.Point(190, 89);
+            this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.Titulo.Location = new System.Drawing.Point(188, 81);
             this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(109, 31);
+            this.Titulo.Size = new System.Drawing.Size(159, 46);
             this.Titulo.TabIndex = 0;
             this.Titulo.Text = "Minutas";
             // 
             // cmbMinutas
             // 
             this.cmbMinutas.FormattingEnabled = true;
-            this.cmbMinutas.Location = new System.Drawing.Point(130, 142);
+            this.cmbMinutas.Location = new System.Drawing.Point(120, 155);
             this.cmbMinutas.Name = "cmbMinutas";
-            this.cmbMinutas.Size = new System.Drawing.Size(234, 21);
+            this.cmbMinutas.Size = new System.Drawing.Size(285, 21);
             this.cmbMinutas.TabIndex = 1;
             this.cmbMinutas.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnseleccionar
             // 
-            this.btnseleccionar.Location = new System.Drawing.Point(196, 187);
+            this.btnseleccionar.Location = new System.Drawing.Point(196, 213);
             this.btnseleccionar.Name = "btnseleccionar";
-            this.btnseleccionar.Size = new System.Drawing.Size(101, 29);
+            this.btnseleccionar.Size = new System.Drawing.Size(144, 29);
             this.btnseleccionar.TabIndex = 3;
             this.btnseleccionar.Text = "Seleccionar";
             this.btnseleccionar.UseVisualStyleBackColor = true;
@@ -66,10 +69,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 339);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(537, 368);
             this.Controls.Add(this.btnseleccionar);
             this.Controls.Add(this.cmbMinutas);
             this.Controls.Add(this.Titulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Main";
             this.Text = "Minutas";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -464,9 +464,9 @@
             this.Controls.Add(this.btnvalidar);
             this.Controls.Add(this.txt_ced_poderdante);
             this.Controls.Add(this.label2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Poder general";
             this.ResumeLayout(false);
             this.PerformLayout();
 
