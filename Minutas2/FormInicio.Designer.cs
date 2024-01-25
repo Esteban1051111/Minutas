@@ -48,6 +48,8 @@
             // 
             // cmbMinutas
             // 
+            this.cmbMinutas.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbMinutas.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbMinutas.FormattingEnabled = true;
             this.cmbMinutas.Location = new System.Drawing.Point(120, 155);
             this.cmbMinutas.Name = "cmbMinutas";
