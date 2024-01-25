@@ -1,6 +1,6 @@
 ﻿namespace Minutas2
 {
-    partial class Form2
+    partial class Formpoder_general
     {
         /// <summary>
         /// Required designer variable.

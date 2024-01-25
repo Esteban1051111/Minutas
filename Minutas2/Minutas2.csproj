@@ -56,25 +56,46 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="FormMatrimonio_civil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="FormMatrimonio_civil.Designer.cs">
+      <DependentUpon>FormMatrimonio_civil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="FormInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="FormInicio.Designer.cs">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formpoder_general.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formpoder_general.Designer.cs">
+      <DependentUpon>Formpoder_general.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formpg_abogado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formpg_abogado.Designer.cs">
+      <DependentUpon>Formpg_abogado.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="FormMatrimonio_civil.resx">
+      <DependentUpon>FormMatrimonio_civil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formpoder_general.resx">
+      <DependentUpon>Formpoder_general.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formpg_abogado.resx">
+      <DependentUpon>Formpg_abogado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -16,9 +16,9 @@ using Humanizer;
 
 namespace Minutas2
 {
-    public partial class Form2 : Form
+    public partial class Formpoder_general : Form
     {
-        public Form2()
+        public Formpoder_general()
         {
             InitializeComponent();
             
