@@ -30,7 +30,14 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtacto = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtindicativo_serial = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtnum_hojas2 = new System.Windows.Forms.TextBox();
+            this.txtnum_hojas1 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.txtfirmas = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtlugar_naci_otorgante2 = new System.Windows.Forms.TextBox();
@@ -72,14 +79,8 @@
             this.btnvalidar = new System.Windows.Forms.Button();
             this.txt_ced_otorgante1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtnum_hojas1 = new System.Windows.Forms.TextBox();
-            this.txtnum_hojas2 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtindicativo_serial = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.txtacto = new System.Windows.Forms.TextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnPegarDesdeWord = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -97,6 +98,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.btnPegarDesdeWord);
             this.panel2.Controls.Add(this.txtacto);
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.txtindicativo_serial);
@@ -152,13 +154,82 @@
             this.panel2.Size = new System.Drawing.Size(936, 809);
             this.panel2.TabIndex = 0;
             // 
-            // richTextBox1
+            // txtacto
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(506, 9);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(415, 751);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.txtacto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtacto.Location = new System.Drawing.Point(205, 41);
+            this.txtacto.Name = "txtacto";
+            this.txtacto.Size = new System.Drawing.Size(200, 20);
+            this.txtacto.TabIndex = 226;
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label23.AutoSize = true;
+            this.label23.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label23.Location = new System.Drawing.Point(59, 48);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(66, 13);
+            this.label23.TabIndex = 225;
+            this.label23.Text = "Acto notarial";
+            // 
+            // txtindicativo_serial
+            // 
+            this.txtindicativo_serial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtindicativo_serial.Location = new System.Drawing.Point(205, 630);
+            this.txtindicativo_serial.Name = "txtindicativo_serial";
+            this.txtindicativo_serial.Size = new System.Drawing.Size(200, 20);
+            this.txtindicativo_serial.TabIndex = 224;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(59, 634);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(68, 13);
+            this.label22.TabIndex = 223;
+            this.label22.Text = "serial registro";
+            // 
+            // txtnum_hojas2
+            // 
+            this.txtnum_hojas2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtnum_hojas2.Location = new System.Drawing.Point(205, 592);
+            this.txtnum_hojas2.Name = "txtnum_hojas2";
+            this.txtnum_hojas2.Size = new System.Drawing.Size(200, 20);
+            this.txtnum_hojas2.TabIndex = 222;
+            // 
+            // txtnum_hojas1
+            // 
+            this.txtnum_hojas1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtnum_hojas1.Location = new System.Drawing.Point(205, 561);
+            this.txtnum_hojas1.Name = "txtnum_hojas1";
+            this.txtnum_hojas1.Size = new System.Drawing.Size(200, 20);
+            this.txtnum_hojas1.TabIndex = 221;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(59, 600);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(83, 13);
+            this.label21.TabIndex = 220;
+            this.label21.Text = "Serial hojas final";
+            // 
+            // label20
+            // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(59, 569);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(90, 13);
+            this.label20.TabIndex = 219;
+            this.label20.Text = "Serial hojas inicial";
             // 
             // txtfirmas
             // 
@@ -557,82 +628,25 @@
             this.label2.TabIndex = 178;
             this.label2.Text = "Cedula otorgante 1";
             // 
-            // label20
+            // richTextBox1
             // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(59, 569);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(90, 13);
-            this.label20.TabIndex = 219;
-            this.label20.Text = "Serial hojas inicial";
+            this.richTextBox1.Location = new System.Drawing.Point(508, 3);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(415, 751);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged_1);
             // 
-            // label21
+            // btnPegarDesdeWord
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(59, 600);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(83, 13);
-            this.label21.TabIndex = 220;
-            this.label21.Text = "Serial hojas final";
-            // 
-            // txtnum_hojas1
-            // 
-            this.txtnum_hojas1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtnum_hojas1.Location = new System.Drawing.Point(205, 561);
-            this.txtnum_hojas1.Name = "txtnum_hojas1";
-            this.txtnum_hojas1.Size = new System.Drawing.Size(200, 20);
-            this.txtnum_hojas1.TabIndex = 221;
-            // 
-            // txtnum_hojas2
-            // 
-            this.txtnum_hojas2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtnum_hojas2.Location = new System.Drawing.Point(205, 592);
-            this.txtnum_hojas2.Name = "txtnum_hojas2";
-            this.txtnum_hojas2.Size = new System.Drawing.Size(200, 20);
-            this.txtnum_hojas2.TabIndex = 222;
-            // 
-            // label22
-            // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(59, 634);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(68, 13);
-            this.label22.TabIndex = 223;
-            this.label22.Text = "serial registro";
-            // 
-            // txtindicativo_serial
-            // 
-            this.txtindicativo_serial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtindicativo_serial.Location = new System.Drawing.Point(205, 630);
-            this.txtindicativo_serial.Name = "txtindicativo_serial";
-            this.txtindicativo_serial.Size = new System.Drawing.Size(200, 20);
-            this.txtindicativo_serial.TabIndex = 224;
-            // 
-            // label23
-            // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label23.AutoSize = true;
-            this.label23.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label23.Location = new System.Drawing.Point(59, 48);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(66, 13);
-            this.label23.TabIndex = 225;
-            this.label23.Text = "Acto notarial";
-            // 
-            // txtacto
-            // 
-            this.txtacto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtacto.Location = new System.Drawing.Point(205, 41);
-            this.txtacto.Name = "txtacto";
-            this.txtacto.Size = new System.Drawing.Size(200, 20);
-            this.txtacto.TabIndex = 226;
+            this.btnPegarDesdeWord.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnPegarDesdeWord.Location = new System.Drawing.Point(411, 731);
+            this.btnPegarDesdeWord.Name = "btnPegarDesdeWord";
+            this.btnPegarDesdeWord.Size = new System.Drawing.Size(75, 23);
+            this.btnPegarDesdeWord.TabIndex = 227;
+            this.btnPegarDesdeWord.Text = "pegar desde word";
+            this.btnPegarDesdeWord.UseVisualStyleBackColor = true;
+            this.btnPegarDesdeWord.Click += new System.EventHandler(this.btnPegarDesdeWord_Click_1);
             // 
             // formMatrimonio_civil
             // 
@@ -643,6 +657,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "formMatrimonio_civil";
             this.Text = "Minuta matrimonio civil";
+            this.Load += new System.EventHandler(this.formMatrimonio_civil_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -704,5 +719,6 @@
         private System.Windows.Forms.TextBox txtnum_hojas1;
         private System.Windows.Forms.TextBox txtacto;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Button btnPegarDesdeWord;
     }
 }
