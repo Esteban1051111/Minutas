@@ -31,6 +31,7 @@
             this.Titulo = new System.Windows.Forms.Label();
             this.cmbMinutas = new System.Windows.Forms.ComboBox();
             this.btnseleccionar = new System.Windows.Forms.Button();
+            this.btnNueva_minuta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Titulo
@@ -67,12 +68,23 @@
             this.btnseleccionar.UseVisualStyleBackColor = true;
             this.btnseleccionar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnNueva_minuta
+            // 
+            this.btnNueva_minuta.Location = new System.Drawing.Point(12, 333);
+            this.btnNueva_minuta.Name = "btnNueva_minuta";
+            this.btnNueva_minuta.Size = new System.Drawing.Size(96, 23);
+            this.btnNueva_minuta.TabIndex = 4;
+            this.btnNueva_minuta.Text = "nueva minuta";
+            this.btnNueva_minuta.UseVisualStyleBackColor = true;
+            this.btnNueva_minuta.Click += new System.EventHandler(this.btnNueva_minuta_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(537, 368);
+            this.Controls.Add(this.btnNueva_minuta);
             this.Controls.Add(this.btnseleccionar);
             this.Controls.Add(this.cmbMinutas);
             this.Controls.Add(this.Titulo);
@@ -90,6 +102,7 @@
         private System.Windows.Forms.Label Titulo;
         private System.Windows.Forms.ComboBox cmbMinutas;
         private System.Windows.Forms.Button btnseleccionar;
+        private System.Windows.Forms.Button btnNueva_minuta;
     }
 }
 

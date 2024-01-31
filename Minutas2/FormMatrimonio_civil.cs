@@ -167,40 +167,41 @@ namespace Minutas2
         {
             return numero.ToWords();
         }
-        private void GuardarComoWord(string contenido)
+        public void GuardarComoWord(string contenido)
         {
-            try
+            // Inicializa una aplicación Word
+            Word.Application wordApp = new Word.Application();
+
+            // Crea un nuevo documento de Word
+            Word.Document doc = wordApp.Documents.Add();
+
+            // Obtiene el formato actual del RichTextBox
+            object oFalse = false; // Valor opcional para algunos parámetros
+            object oTrue = true;
+            object oUnit = Word.WdUnits.wdCharacter;
+            object oCount = 1;
+            object oExtend = Word.WdMovementType.wdExtend;
+
+            // Copia el contenido del RichTextBox al documento de Word
+            richTextBox1.SelectAll();
+            richTextBox1.Copy();
+            doc.ActiveWindow.Selection.Paste();
+
+            // Guarda el documento en un archivo
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Archivos de Word|.docx|Todos los archivos|.*";
+            saveFileDialog1.Title = "Guardar como archivo de Word";
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                // Crea una instancia de SaveFileDialog
-                SaveFileDialog saveFileDialog = new SaveFileDialog();
-                saveFileDialog.Filter = "Documentos de Word (*.docx)|*.docx";
-                saveFileDialog.Title = "Guardar como";
-
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    // Crea una instancia de Word Application
-                    Word.Application wordApp = new Word.Application();
-
-                    // Crea un nuevo documento de Word
-                    Word.Document doc = wordApp.Documents.Add();
-
-                    // Agrega el contenido del RichTextBox al documento de Word
-                    doc.Range().Text = contenido;
-
-                    // Guarda el documento de Word en la ubicación elegida por el usuario
-                    doc.SaveAs2(saveFileDialog.FileName, Word.WdSaveFormat.wdFormatDocumentDefault);
-
-                    // Cierra Word
-                    wordApp.Quit();
-
-                    MessageBox.Show("Exportación y guardado exitosos en Word.");
-                }
+                string filePath = saveFileDialog1.FileName;
+                doc.SaveAs2(filePath);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al exportar y guardar en Word: " + ex.Message);
-            }
-        }
+
+            // Cierra la aplicación Word
+            wordApp.Quit();
+        
+    }
 
         private void button2_Click(object sender, EventArgs e)
         {

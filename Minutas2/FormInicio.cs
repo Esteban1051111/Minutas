@@ -23,6 +23,7 @@ namespace Minutas2
             cmbMinutas.Items.Add("Poder general"); 
             cmbMinutas.Items.Add("Poder general con abogado");
             cmbMinutas.Items.Add("Matrimonio civil");
+            cmbMinutas.Items.Add("Venta de contado entre particulares");
 
 
             cmbMinutas.SelectedIndex = 0;
@@ -84,7 +85,11 @@ namespace Minutas2
                         form3.Show();
                         break;
 
+                    case "Venta de contado entre particulares":
+                        VentaContadoParticulares vent = new VentaContadoParticulares();
+                        vent.Show(); 
 
+                        break;
                     default:
                         break;
 
@@ -97,5 +102,11 @@ namespace Minutas2
 
 
         }//cierra metodo principañ
+
+        private void btnNueva_minuta_Click(object sender, EventArgs e)
+        {
+            login login = new login();  
+            login.Show();
+        }
     }
 }

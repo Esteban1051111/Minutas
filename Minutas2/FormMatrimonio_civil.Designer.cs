@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnPegarDesdeWord = new System.Windows.Forms.Button();
             this.txtacto = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txtindicativo_serial = new System.Windows.Forms.TextBox();
@@ -80,7 +81,6 @@
             this.txt_ced_otorgante1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.btnPegarDesdeWord = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -153,6 +153,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(936, 809);
             this.panel2.TabIndex = 0;
+            // 
+            // btnPegarDesdeWord
+            // 
+            this.btnPegarDesdeWord.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnPegarDesdeWord.Location = new System.Drawing.Point(411, 731);
+            this.btnPegarDesdeWord.Name = "btnPegarDesdeWord";
+            this.btnPegarDesdeWord.Size = new System.Drawing.Size(75, 23);
+            this.btnPegarDesdeWord.TabIndex = 227;
+            this.btnPegarDesdeWord.Text = "pegar desde word";
+            this.btnPegarDesdeWord.UseVisualStyleBackColor = true;
+            this.btnPegarDesdeWord.Click += new System.EventHandler(this.btnPegarDesdeWord_Click_1);
             // 
             // txtacto
             // 
@@ -630,23 +641,14 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.Location = new System.Drawing.Point(508, 3);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(415, 751);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged_1);
-            // 
-            // btnPegarDesdeWord
-            // 
-            this.btnPegarDesdeWord.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnPegarDesdeWord.Location = new System.Drawing.Point(411, 731);
-            this.btnPegarDesdeWord.Name = "btnPegarDesdeWord";
-            this.btnPegarDesdeWord.Size = new System.Drawing.Size(75, 23);
-            this.btnPegarDesdeWord.TabIndex = 227;
-            this.btnPegarDesdeWord.Text = "pegar desde word";
-            this.btnPegarDesdeWord.UseVisualStyleBackColor = true;
-            this.btnPegarDesdeWord.Click += new System.EventHandler(this.btnPegarDesdeWord_Click_1);
             // 
             // formMatrimonio_civil
             // 
@@ -655,6 +657,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(957, 520);
             this.Controls.Add(this.panel1);
+            this.MinimumSize = new System.Drawing.Size(973, 559);
             this.Name = "formMatrimonio_civil";
             this.Text = "Minuta matrimonio civil";
             this.Load += new System.EventHandler(this.formMatrimonio_civil_Load);
